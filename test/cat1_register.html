@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="assets/img/logo.jpg">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>AITAM INNOVATION CONTEST</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+	<!--     Fonts and icons     -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+	<!-- CSS Files -->
+    <link href="assets/register_assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/register_assets/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/register_assets/css/demo.css" rel="stylesheet" />
+	<script type="text/javascript">
+            function PreviewImage() {
+                pdffile=document.getElementById("uploadPDF").files[0];
+                pdffile_url=URL.createObjectURL(pdffile);
+                $('#viewer').attr('src',pdffile_url);
+            }
+        </script>
+</head>
+
+<body>
+    <div class="image-container set-full-height"  style="background-image: url('assets/img/clgepic.jpg')">
+        <!--   Creative Tim Branding   -->
+        <a href="http://creative-tim.com">
+             <div class="logo-container">
+                <div class="logo">
+                    <img src="assets/register_assets/img/new_logo.png">
+                </div>
+                <div class="brand">
+                    AITAM INNOVATION CONTEST
+                </div>
+            </div>
+        </a>
+    
+
+	<!--  Made With Get Shit Done Kit  -->
+		
+
+    <!--   Big container   -->
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+
+            <!--      Wizard container        -->
+            <div class="wizard-container">
+
+                <div class="card wizard-card" data-color="orange" id="wizardProfile">
+                    <form action="cat1_register_data.php" method="POST" enctype="multipart/form-data">
+                <!--        You can switch ' data-color="orange" '  with one of the next bright colors: "blue", "green", "orange", "red"          -->
+
+                    	<div class="wizard-header">
+                        	<h3>
+                        	   <b>REGISTRATION FORM FOR CATEGORY-1</b><br>(6TH STANDARD TO 10TH STANDARD)<br>
+                        	   <small>Fill your details</small>
+                        	</h3>
+                    	</div>
+
+						<div class="wizard-navigation">
+							<ul>
+	                            <li><a href="#about" data-toggle="tab">About You</a></li>
+	                            <li><a href="#account" data-toggle="tab">About The School</a></li>
+	                            <li><a href="#address" data-toggle="tab">File Submission</a></li>
+	                        </ul>
+
+						</div>
+
+                        <div class="tab-content">
+                            <div class="tab-pane" id="about">
+                              <div class="row">
+                              	   <h4 class="info-text"><b>PERSONAL DETAILS</b></h4>
+                                  <div class="col-sm-5 col-sm-offset-1">
+                                  	<div class="form-group">
+                                         <label>First Name</label>
+                                         <input name="firstname" type="text" class="form-control" placeholder="First Name" required>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-5">
+                                      <div class="form-group">
+                                        <label>Surname</label>
+                                        <input name="surname" type="text" class="form-control" placeholder="Surname" required>
+                                      </div>
+                                   </div>
+                                   <div class="col-sm-5 col-sm-offset-1">
+                                  	<div class="form-group">
+                                         <label>Phone Number</label>
+                                         <input name="phonenumber" type="tel" min="10"  class="form-control" placeholder="Phone Number" required>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-5">
+                                      <div class="form-group">
+                                        <label>Alternate Phone Number</label>
+                                        <input name="alternatenumber" type="tel" min="10"  class="form-control" placeholder="AlternatePhone Number" required>
+                                      </div>
+                                   </div>     
+                                   <div class="col-sm-5 col-sm-offset-1">
+                                  	<div class="form-group">
+                                         <label>Address  <small>Doorno,streetname,area,pincode</small></label>
+                                         <input name="address" type="text" class="form-control" placeholder="Doorno,streetname,area,pincode" required>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-5">
+                                      <div class="form-group">
+                                        <label>District</label>
+                                        <select name="district" class="form-control" >
+                                        	    <option value="">-----Select your district---------</option>
+                                                <option value="Anantapur"> Anantapur</option>
+                                                <option value="Chittoor">Chittoor </option>
+                                                <option value="East Godavari">East Godavari </option>
+                                                <option value="Guntur "> Guntur </option>
+                                                <option value="Krishna"> Krishna </option>
+                                                <option value="Kurnool"> Kurnool </option>
+                                                <option value="Prakasam">Prakasam </option>
+                                                <option value="Srikakulam"> Srikakulam </option>
+                                                <option value="SriPotti Sri Ramulu Nellore">SriPotti Sri Ramulu Nellore</option>
+                                                <option value="Vishakhapatnam">Vishakhapatnam</option>
+                                                <option value="Vizianagaram">Vizianagaram</option>
+                                                <option value="West Godavari">West Godavari</option>
+                                                <option value="kadapa">kadapa</option>
+                                            </select>
+                                      </div>
+                                   </div>                         
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="account">
+                                <h4 class="info-text"> <b>SCHOOL DETAILS & TOPIC CHOSEN </b></h4>
+                                <div class="row">
+                                <div class="col-sm-5 col-sm-offset-1">
+                                  	<div class="form-group">
+                                         <label>School Name</label>
+                                         <input name="schoolname" type="text" class="form-control" placeholder="Sri Chaithanya Techno School" required>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-5">
+                                      <div class="form-group">
+                                        <label>Admission Number</label>
+                                        <input name="admno" type="text" class="form-control" placeholder="616038" required>
+                                      </div>
+                                   </div>
+                                   <div class="col-sm-5 col-sm-offset-1">
+                                  	<div class="form-group">
+                                         <label>Class</label>
+                                         <select name="class" class="form-control" >
+                                        	    <option value="">-----Select your class---------</option>
+                                                <option value="6th">6th standard</option>
+                                                <option value="7th">7th standard</option>
+                                                <option value="8th">8th standard</option>
+                                                <option value="9th">9th standard</option>
+                                                <option value="10th">10th standard</option>
+                                        </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-5">
+                                      <div class="form-group">
+                                        <label>Thrust Areas</label>
+                                        <select name="topics" class="form-control">
+                                        	    <option value="">Choose your selected thrust area</option>
+                                                <option value="Covid-19 Safety and Service">Covid-19 Safety and Service</option>
+                                                <option value="Disaster Management">Disaster Management</option>
+                                                <option value="Go Green to Breathe Clean">Go Green to Breathe Clean</option>
+                                                <option value="Water Management">Water Management</option>
+                                                <option value="Wealth from Waste">Wealth from Waste</option>
+                                                <option value="Agriculture">Agriculture</option>
+                                                <option value="Environmental Sustainability">Environmental Sustainability</option>
+                                        </select>
+                                      </div>
+                                   </div>                                      
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="address">
+                                <div class="row">
+                                <div class="col-sm-5 col-sm-offset-3">
+                                  <h4 class="info-text"> <b>UPLOAD YOUR PDF FILE </b></h4>
+                                  <input name='file' type='file' required><br>
+                                  <input type="button" class='btn btn-wd btn-warning btn-fill' value="Preview" onclick="PreviewImage();" />
+                                  </div>
+                                  <div class="col-sm-5"style="clear:both">
+                                  <iframe id="viewer" frameborder="0" scrolling="no" width="500" height="300"></iframe>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wizard-footer height-wizard">
+                            <div class="pull-right">
+                                <input type='button' class='btn btn-next btn-fill btn-warning btn-wd btn-sm' name='next' value='Next' />
+                                <input type='submit' class='btn btn-finish btn-fill btn-warning btn-wd btn-sm' name='finish' value='Finish' />
+
+                            </div>
+                       
+                            <div class="pull-left">
+                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd btn-sm' name='previous' value='Previous' />
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </form>
+                </div>
+            </div> <!-- wizard container -->
+        </div>
+        </div><!-- end row -->
+    </div> <!--  big container -->
+
+    <div class="footer">
+        <div class="container">
+             Made with <i class="fa fa-heart heart"></i> by <a href="">Creative Tim</a>. Free download <a href="">here.</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+	<!--   Core JS Files   -->
+	<script src="assets/register_assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="assets/register_assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/register_assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="assets/register_assets/js/gsdk-bootstrap-wizard.js"></script>
+
+	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="assets/register_assets/js/jquery.validate.min.js"></script>
+
+</html>
